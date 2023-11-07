@@ -1,8 +1,12 @@
-# React + Vite
+# useReducer Hook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal project to learn ```useReducer``` hook in React
 
-Currently, two official plugins are available:
+**Definition:** The useReducer hook is a built-in React hook that is used for managing complex state logic in functional components. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Arguments of useReducer hook
+- reducer: This is the reducer function that defines how the state should be updated in response to different actions. It takes two arguments: the current state and the action, and it returns the new state.
+- initialState (required): This is the initial state of your component. It represents the initial value of your state.
+
+### Syntax
+```const [state, dispatch] = useReducer(reducer, initialState);```
