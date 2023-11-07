@@ -15,7 +15,7 @@ const reducer = (state, action) => {
 };
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, { count: 0 });
+  const [state, dispatch] = useReducer(reducer, { count: 0 });  // the values returned by useReducer is destructured into two variables
 
   const increment = () => {
     dispatch({ type: "increment" });
