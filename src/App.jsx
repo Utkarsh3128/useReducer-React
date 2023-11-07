@@ -2,6 +2,8 @@ import { useReducer } from "react";
 import "./App.css";
 
 const reducer = (state, action) => {
+  // A reducer is a pure function that specifies how the state should be updated in response to actions.
+  // It takes the current state and an action as input and returns a new state.
   switch (action.type) {
     case "increment":
       return { count: state.count + 1 };
